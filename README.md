@@ -2,11 +2,17 @@
 
 Truly Dynamic Lighting 2 (or TDL2) is the more advanced iteration and successor to my original module, Truly Dynamic Lighting (or TDL).  This version aims to be more lightweight , more customizable, and easier to use than the original TDL, all while retaining the same original features.
 
-## Brief Feature List
+## Highlights
 
 - [Server Sided or Client Sided Options](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#server-sided-or-client-sided-options)
-- [Turn on/off lights](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#sfull-feature-list)
-- [Day/Night Script Auto Sync](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#day-night-script-auto-sync)
+- [Turn on/off lights](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#turn-onoff-lights)
+- [Day/Night Script Auto Sync & Auto Calculated Tween Starts](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#daynight-script-auto-sync-and-auto-calculated-tween-starts)
+- [Utilizes a Scalable Class Based Approach](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#utilizes-a-scalable-class-based-approach)
+- [Integration with Weather Scripts](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#integration-with-weather-scripts)
+
+and many more...
+
+Check out [Full Feature List]
 
 You can use the [editor on GitHub](https://github.com/httpsKingPie/httpsKingPie.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -19,6 +25,8 @@ You can use the [editor on GitHub](https://github.com/httpsKingPie/httpsKingPie.
 ### Compataible with all Lighting Settings and Lighting Children Settings
 
 ### More Advanced Complex Instance (aka Multi-Instance) Capability
+
+### Utilizes a Scalable Class Based Approach
 
 ### Auto Calculated Tween Starts
 
