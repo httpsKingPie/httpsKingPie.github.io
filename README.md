@@ -1,6 +1,17 @@
-## Welcome to GitHub Pages
+## Welcome to TDL2
 
+Truly Dynamic Lighting 2 (or TDL2) is the more advanced iteration and successor to my original module, Truly Dynamic Lighting (or TDL).  This version aims to be more lightweight , more customizable, and easier to use than the original TDL, all while retaining the same original features.
+
+## Brief Feature List
+
+- [Served Sided or Client Sided Options]
+- [Turn on/off lights]
 You can use the [editor on GitHub](https://github.com/httpsKingPie/httpsKingPie.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+
+## Full Feature List
+
+#Served Sided or Client Sided Options
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
