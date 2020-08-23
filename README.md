@@ -4,61 +4,35 @@ Truly Dynamic Lighting 2 (or TDL2) is the more advanced iteration and successor 
 
 ## Brief Feature List
 
-- [Served Sided or Client Sided Options](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#server-sided-or-client-sided-options)
-- [Turn on/off lights](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#server-sided-or-client-sided-options)
+- [Server Sided or Client Sided Options](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#server-sided-or-client-sided-options)
+- [Turn on/off lights](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#sfull-feature-list)
+- [Day/Night Script Auto Sync](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#day-night-script-auto-sync)
 
 You can use the [editor on GitHub](https://github.com/httpsKingPie/httpsKingPie.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Full Feature List
 
-### Served Sided or Client Sided Options
+### Server Sided or Client Sided Options
+
+### Turn On/Off Lights
+
+### Compataible with all Lighting Settings and Lighting Children Settings
+
+### More Advanced Complex Instance (aka Multi-Instance) Capability
+
+### Auto Calculated Tween Starts
+
+### Smart Set Up for Setting Management
+
+### Integration with Weather Scripts
+
+### Performance Improvements
+
+### Day/Night Script Auto Sync
+
+### Easy Use
+
+### Simple API
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
