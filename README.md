@@ -32,8 +32,6 @@ and many more...
 
 Check out [Full Feature List](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#full-feature-list) for a full list
 
-You can use the [editor on GitHub](https://github.com/httpsKingPie/httpsKingPie.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
 ## Full Feature List
 
 ### Server Sided or Client Sided Options
@@ -76,6 +74,12 @@ Settings now feature a much more readable format internally that makes editing t
 
 ### Integration with Weather Scripts
 
+I mentioned immersion before, and one of the best ways to employ weather is to use it in combination with awesome lighting settings.  TDL2 carries on the ability of TDL in allowing for smooth transitions to weather lighting.  This can be done, very simple, using the below function
+```lua
+module.TweenWeather(WeatherName)
+```
+
+This is also the same command used in TDL, some conversion between the two should be seamless.
 ### Performance Improvements
 
 ### Easy Use
