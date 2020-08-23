@@ -23,6 +23,7 @@ _Once in Game_
 
 - [Server Sided or Client Sided Options](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#server-sided-or-client-sided-options)
 - [Turn on/off lights](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#turn-onoff-lights)
+- [Control and Modify the Properties of Complex Instances](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#more-advanced-complex-instance-aka-multi-instance-capability)
 - [Day/Night Script Auto Sync & Auto Calculated Tween Starts](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#daynight-script-auto-sync-and-auto-calculated-tween-starts)
 - [Utilizes a Scalable Class Based Approach](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#utilizes-a-scalable-class-based-approach)
 - [Integration with Weather Scripts](https://github.com/httpsKingPie/httpsKingPie.github.io/blob/master/README.md#integration-with-weather-scripts)
