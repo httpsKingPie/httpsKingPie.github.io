@@ -74,17 +74,29 @@ Settings now feature a much more readable format internally that makes editing t
 
 ### Integration with Weather Scripts
 
-I mentioned immersion before, and one of the best ways to employ weather is to use it in combination with awesome lighting settings.  TDL2 carries on the ability of TDL in allowing for smooth transitions to weather lighting.  This can be done, very simple, using the below function
+I mentioned immersion before, and one of the best ways to employ weather is to use it in combination with awesome lighting settings.  TDL2 carries on the ability of TDL in allowing for smooth transitions to weather lighting.  This can be done, very simple, using the below function:
+
 ```lua
 module.TweenWeather(WeatherName)
 ```
 
-This is also the same command used in TDL, some conversion between the two should be seamless.
+This is also the same command used in TDL, so conversion between the two should be seamless.
+
 ### Performance Improvements
+
+If you compare the source code between TDL and TDL2, you will see a completely different shift in mentality.  TDL2 was built to be powerful and very lightweight.  Increased controls are also given to the user in Settings that can lead to performance enhancements as well, depending on the structure of your game.
 
 ### Easy Use
 
+TDL2 is designed to be usable and understandable by all.  Setup is very quick and the entire module can be run in one line, that being:
+
+```lua
+module.Run()
+```
+
 ### Simple API
+
+TDL2 has a very simple API, that most people won't ever have to use.  As mentioned above, the entire system can be run in one line.  The API is to give developers more freedom to make manual changes if necesary.
 
 ## Settings Overivew
 
