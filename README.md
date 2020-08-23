@@ -2,6 +2,9 @@
 
 Truly Dynamic Lighting 2 (or TDL2) is the more advanced iteration and successor to my original module, Truly Dynamic Lighting (or TDL).  This version aims to be more lightweight , more customizable, and easier to use than the original TDL, all while retaining the same original features.
 
+Here's an example of what this looks like visually (with some example Lighting Periods)
+![Example of Lighting Features](https://i.gyazo.com/8e7d60361fb68c108a7670c00a351e17.png)
+
 ## How do I use TDL2?
 TDL2 takes a different approach than the original TDL.  It comes in more of a package setting.  You can always download the most up to date version directly from the github as a .rbmx model.  Alternatively, you can check out it's toolbox page (ADD TOOLBOX PAGE HERE).
 
@@ -55,6 +58,14 @@ As was mentioned before, TDL2 uses a scalable design to allow for the easy addit
 ### Day/Night Script Auto Sync and Auto Calculated Tween Starts
 
 TDL2, like TDL, features a system that auto-calculates how fast time moves in your game (i.e. the speed of your Day/Night cycle) and will automatically adjust your Lighting Periods such that the completion of the settings changes and tweens corresponds exactly to the beginnings of your lighting period.  This is a setting that can now be disabled, too.
+
+If you're confused about why this is necesary, take a look at this graphic.  
+
+![Example of issue](https://i.gyazo.com/265de5b46b7d54e2ba45542d4032e12a.png)
+
+*The black lines are the ranges of each lighting period and when we want those settings to be applied.  The red lines are approximately where those settings are going to be applied if the tween starts at the beginning of the lighting period.  This can result in Lighting Periods behaving as the developer does not intend*
+
+Auto Sync solves this issue and ensures that Lighting Periods exist during the ranges that you specify.
 
 ### Smart Set Up for Setting Management
 
