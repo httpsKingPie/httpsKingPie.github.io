@@ -100,8 +100,53 @@ TDL2 has a very simple API, that most people won't ever have to use.  As mention
 
 ## Settings Overivew
 
+This is a brief overview of the various settings.
+
+### Settings (the Main Settings module that is a sibling of Main)
+
+- **AdjustmentTime**
+
+This is the value that determines the amount of time allocated to the script to detect how fast time passes in your day/night script, i.e. the amount of time the script has to figure out Auto Sync.  From my own experience, I've found that 5 yields the best results per time allocated, so I recommend keeping that as the default.  With that being said, if you would like to shorten or extend this, feel free.
+
+**AlwaysCheckInstances** 
+
+This determines whether the script should run a search through workspace to check for instance changes every time the lighting settings change or whether it should only happen once.  In other words, setting this to false will mean that the script will check to see if it has already performed a search for the instances you are trying to change, and if it has, it will cache that result.  Setting to true will mean that it will search each time, regardless of a cached result.
+
+**AutomaticTransitions**
+
+Setting this to true means that TDL2 will perform checks and update the lighting automatically as your time changes.  Setting this to false means that you will have to do this manually.  This isn't difficult to do manually, see the API section.
+
+**ChangingInstanceChildrenOfWorkspace**
+
+Long setting name, very short explanation.  Basically if all the instances (excluding those that are naturally children of Lighting) that you expect to change are children, rather than descendants, or Workspace, set this to true.  If you have instances that are descendants, rather than children, set this to false.  This yields a small performance increase for those who have instances that are simply children of Workspace.  
+
+**CheckTime**
+
+This is the time that the script has between its checks where it determines whether a new lighting period has been entered.  The reason the script works this way, as opposed to an event, is because many day/night scripts would fire the event multiple times a second.  Given that most lighting period changes don't need to be accurate to the thousandeth of a ClockTime, implementing independent CheckTimes boasts a massive performance increase.  It is recommended to keep CheckTime to around 1 - 3, but feel free to adjust it to your liking.  In general though, day/night scripts that move faster should have smaller CheckTimes, while day/night scripts that move slower can get away with larger CheckTimes.
+
+**ClientSided**
+
+This determines whether the script is run on the server or the client.  Lighting can be tricky when both the server and client are modifying the same instances, so this gives a solution for the client to take total ownership over the lighting.  Setting this to true, is also not the same thing as running the module from the client, as checks are performed on the server, to ensure all players have the same experience, and then replicated to the clients.  This is default set to false, as this is useful for games that meet the criteria above.  Many games will never encounter the issues that would make client sided TDL2 attractive.
+
+**EnableSorting**
+
+Sorting is a method that improves the performance of the system by having the script only check to see when the next adjacent lighting period begins.  The drawbacks are that you *can not* make changes to the ClockTime variable that are drastic, ex: when ClockTime is 12, do not randomly change it to 23 if doing so would move the game into a lighting period that is not immediately following the current lighting period.  If you only have a few lighting periods in game, you can get away with doing this while EnableSorting is set to true.  However, if you are planning on making sudden changes to the ClockTime in game (not including day/night scripts) I would not recommend using EnableSorting.  Setting to false will make it so that TDL2 checks to see what lighting period it is, regardless of sequential or adjacent position.  I.e. if you make a sudden change to ClockTime, TDL2 will follow you and start adjusting lighting settings appropriately.
+
+**Tween**
+
+Set it to true if you like nice tweens.  Set it to false if you want hard changes.
+
+**TweenInformation**
+
+Adjust the tween information if you set Tween to true.  I recommend keeping the EasingStyle as Linear in all cases.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Internal Settings
+
+*Do not adjust Internal Settings unless you are planning on modifying TDL2 for your own purposes.  Modification without proper changes can break the script entirely or result in unexpected behavior*
+
+## LightingSetings/WeatherSettings/FullSettingsExample
 
 ### Markdown
 
