@@ -104,7 +104,7 @@ This is a brief overview of the various settings.
 
 ### Settings (the Main Settings module that is a sibling of Main)
 
-- **AdjustmentTime**
+**AdjustmentTime**
 
 This is the value that determines the amount of time allocated to the script to detect how fast time passes in your day/night script, i.e. the amount of time the script has to figure out Auto Sync.  From my own experience, I've found that 5 yields the best results per time allocated, so I recommend keeping that as the default.  With that being said, if you would like to shorten or extend this, feel free.
 
