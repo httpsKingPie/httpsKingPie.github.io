@@ -52,7 +52,7 @@ One cool feature of TDL was its ability to control complex instances (previously
 
 ### Utilizes a Scalable Class Based Approach
 
-As was mentioned before, TDL2 uses a scalable design to allow for the easy addition of any new lighting properties or classes.  TDL2 is also fully compatible with *classes not explicitly included in the settings*, meaning that if there is a class that you want to affect (ex: Sparkles) you can simply add it to the TDL2 settings page like any other class and the script will work.  Some properties that are not able to be adjusted by code (ex: LightingTechnology) or values that are difficult to include as automated changes (ex: ColorSequences) may result in errors, but the door is open for you to take the module where you want.  Ultimately, this acts as a tool for you to use how you wish.
+As was mentioned before, TDL2 uses a scalable design to allow for the easy addition of any new lighting properties or classes.  This makes it both very easy to edit, but also fully compatible with *classes not explicitly included in the settings*, meaning that if there is a class that you want to affect (ex: Sparkles) you can simply add it to the TDL2 settings page like any other class and the script will work.  Some properties that are not able to be adjusted by code (ex: LightingTechnology) or values that are difficult to include as automated changes (ex: ColorSequences) may result in errors, but the door is open for you to take the module where you want.  Ultimately, this acts as a tool for you to use how you wish.
 
 ### Day/Night Script Auto Sync and Auto Calculated Tween Starts
 
@@ -148,6 +148,33 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## LightingSetings/WeatherSettings/FullSettingsExample
 
+*GeneralSettings*
+
+**StartTime** (for LightingSettings only)
+
+This is the time your lighting period starts.  Put times in using 24 hour notation (ex: 4 in the afternoon = 16).
+
+**EndTime** (for LightingSettings only)
+
+This is the time your lighting period ends.  Put times in using 24 hour notation (ex: 4 in the afternoon = 16).
+
+*Important Note: Make your lighting periods continous.  If you have four lighting periods, make them look like (0-6, 6-12, 12-18, 18-0).  Don't do (0-1, 6-7, 12-13, 18-19)*
+
+**LightsOn** (for LightingSettings only)
+
+This one is sort of tough to explain, so I'll describe how the script uses this value and why it's useful for immersion.  
+
+Imagine a town where TDL2 is used to make things look realistic.  If randomization is used (covered in the ChanceOfChange setting/property below), 75% of the lights turn on when it gets dark (picture early evenign) to simulate buildings having some lights on due to the darkness.  Now, if another lighting period is called, say there's a midnight lighting period, it wouldn't make sense to make changes to the lights again, they are already on.  Same goes for if the weather changes causing the lighting to get vastly darker, unless you specifically intended to, it wouldn't make sense to change the lights *again*.
+
+Not making sense?  Here's a more Studio relevant example.  I have a lantern model.  When the time hits nighttime and we enter my nighttime lighting period, I want the light to have a 75% chance of turning on.  Assuming it turns on, the PointLight instance within my lantern is active.  Now imagine, I actually have 200 lantern models that are affected by this, and approximately 75% (150 lanterns) of them are "on".  Now, when I hit my midnight lighting period, it might make sense to still tell the TDL2 that I want my lanterns on, particularly if you're using the unsorted setting.  Now if I turn on all my lanterns again, with 75% randomization, that means that actually approximately 188 of the 200 lanterns will be on (since the ones that are on are already on, and the remaining ones that are off with have a 75% chance of turning on again).  Ugh, now lighting periods are not behaving how I want them to, because 94% of lanterns on is not 75%.  This problem would not occur if TDL2 respected the fact that the lanterns were already on, and decided not to make any changes, which is what setting LightsOn as true does.
+
+**AdjustOnlyLightsOn**
+
+This one is also tough to explain, so forgive me for taking you on a rollercoaster.  Read the description for the LightsOn setting (ctrl + f if you need to), and then come back to here.  Sorry.
+
+So continuing my exmaple, lanterns.  Of my approximately 150 lanterns that are on, I might want to make a change such as reducing the size of the light in the lanterns, to simulate the light dying down.  By setting AdjustOnlyLightsOn to true, any changes with the lighting period will only affect lights that have been toggled as on, based on the LightsOn property.  
+
+So basically this property makes TDL2 respect lights as "already being on".  
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
